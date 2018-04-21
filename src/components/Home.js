@@ -1,16 +1,11 @@
 // @flow
 
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import {
-  Platform,
-  Text,
-  View
-} from 'react-native';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Text, View } from 'react-native'
+import { Button } from 'react-native-elements'
 
-import { Button } from 'react-native-elements';
-
-import styles from '../styles';
+import styles from '../styles'
 
 const Home = ({ counter, increaseCounter, decreaseCounter }) => (
   <View style={styles.container}>
@@ -27,12 +22,12 @@ const Home = ({ counter, increaseCounter, decreaseCounter }) => (
     <Text> </Text>
     <Button title='Decrease' onPress={decreaseCounter} />
   </View>
-);
+)
 
 Home.propTypes = {
   counter: PropTypes.number.isRequired,
   increaseCounter: PropTypes.func.isRequired,
   decreaseCounter: PropTypes.func.isRequired,
-};
+}
 
-export default Home;
+export default Home

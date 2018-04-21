@@ -1,16 +1,14 @@
 // @flow
 
-import React from 'react';
-import { Text, View } from 'react-native';
+import React from 'react'
+import { Text, View } from 'react-native'
 
-import styles from '../styles';
+import styles from '../styles'
 
-const Map = () => (
+export default () => (
   <View style={styles.container}>
     <Text style={styles.welcome}>
       Map Screen
     </Text>
   </View>
-);
-
-export default Map;
+)

@@ -1,25 +1,23 @@
- // @flow
+// @flow
 
-import React from 'react';
-import { TabNavigator } from 'react-navigation';
-import { Provider } from 'react-redux';
+import React from 'react'
+import { TabNavigator } from 'react-navigation'
+import { Provider } from 'react-redux'
 
-import store from '../store';
+import store from '../store'
 
-import { Home } from '../containers/*';
-import { Map } from '../components/*';
+import { Home } from '../containers/*'
+import { Map } from '../components/*'
 
 const ShuttleApp = TabNavigator({
   Home: { screen: Home },
   Map: { screen: Map },
 }, {
   initialRouteName: 'Home',
-});
+})
 
 export default () => (
   <Provider store={store}>
     <ShuttleApp />
   </Provider>
-);
-
-
+)

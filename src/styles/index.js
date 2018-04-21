@@ -22,4 +22,4 @@ export default StyleSheet.create({
     color: colors.foreground,
     marginBottom: 5,
   },
-});
+})

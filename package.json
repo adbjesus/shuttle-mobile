@@ -6,7 +6,8 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "flow": "flow",
-    "flow-stop": "flow stop"
+    "flow-stop": "flow stop",
+    "eslint": "eslint"
   },
   "dependencies": {
     "prop-types": "^15.6.1",
@@ -16,13 +17,21 @@
     "react-native-vector-icons": "^4.6.0",
     "react-navigation": "^1.5.11",
     "react-redux": "^5.0.7",
-    "redux": "^4.0.0"
+    "redux": "^4.0.0",
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
     "babel-jest": "22.4.3",
     "babel-plugin-wildcard": "^5.0.0",
     "babel-preset-react-native": "4.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-standard": "^3.0.1",
     "flow-bin": "^0.67.1",
     "jest": "22.4.3",
     "react-test-renderer": "16.3.1"

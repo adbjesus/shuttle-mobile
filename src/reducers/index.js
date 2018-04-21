@@ -1,18 +1,18 @@
 // @flow
 
-import { combineReducers } from 'redux';
+import { combineReducers } from 'redux'
 
 const counter = (state = 1, action) => {
   switch (action.type) {
     case 'INCREASE_COUNTER':
-      return ++state;
+      return ++state
     case 'DECREASE_COUNTER':
-      return --state;
+      return --state
     default:
-      return state;
+      return state
   }
 }
 
 export default combineReducers({
   counter,
-});
+})
