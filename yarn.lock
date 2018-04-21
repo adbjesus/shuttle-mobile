@@ -4640,7 +4640,7 @@ react-native-elements@^0.19.1:
     opencollective "^1.0.3"
     prop-types "^15.5.8"
 
-react-native-events@~1.0.7:
+react-native-events@^1.0.7, react-native-events@~1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/react-native-events/-/react-native-events-1.0.7.tgz#6870140cc9f33eabe68512840b444c87a564b362"
   dependencies:
