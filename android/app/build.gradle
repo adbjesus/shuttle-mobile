@@ -121,6 +121,10 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
+    packagingOptions {
+        pickFirst 'lib/armeabi-v7a/libgnustl_shared.so'
+        pickFirst 'lib/x86/libgnustl_shared.so'
+    }
     // applicationVariants are e.g. debug, release
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
@@ -137,6 +141,7 @@ android {
 }
 
 dependencies {
+    compile project(':rn-spotify-sdk')
     compile project(':react-native-vector-icons')
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile "com.android.support:appcompat-v7:23.0.1"
