@@ -16,7 +16,7 @@ const ShuttleApp = TabNavigator({
   initialRouteName: 'Home',
 });
 
-export default App = () => (
+export default () => (
   <Provider store={store}>
     <ShuttleApp />
   </Provider>

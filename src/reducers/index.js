@@ -13,6 +13,6 @@ const counter = (state = 1, action) => {
   }
 }
 
-export default ShuttleApp = combineReducers({
+export default combineReducers({
   counter,
 });
