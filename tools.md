@@ -1,7 +1,6 @@
 # Basics
 
 - [React Native Getting Started](https://facebook.github.io/react-native/docs/getting-started.html)
-- [Expo](https://expo.io)
 
 # React Stuff
 
