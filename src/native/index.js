@@ -16,14 +16,10 @@ const ShuttleApp = TabNavigator({
   initialRouteName: 'Home',
 });
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <ShuttleApp />
-      </Provider>
-    );
-  }
-}
+export default App = () => (
+  <Provider store={store}>
+    <ShuttleApp />
+  </Provider>
+);
 
 
