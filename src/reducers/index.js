@@ -2,13 +2,17 @@
 
 import { combineReducers } from 'redux';
 
-function defaultdata(state=[], action) {
+const counter = (state = 1, action) => {
   switch (action.type) {
+    case 'INCREASE_COUNTER':
+      return ++state;
+    case 'DECREASE_COUNTER':
+      return --state;
     default:
-      return [];
+      return state;
   }
 }
 
 export default ShuttleApp = combineReducers({
-  defaultdata,
+  counter,
 });

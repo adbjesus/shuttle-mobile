@@ -1,18 +1,23 @@
 // @flow
 
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {
   Platform,
   Text,
   View
 } from 'react-native';
+
+import { Button } from 'react-native-elements';
+
 import styles from '../styles';
 
 export default class Home extends Component {
-
-  static defaultProps = {}
-
-  static propTypes = {}
+  static propTypes = {
+    counter: PropTypes.number.isRequired,
+    increaseCounter: PropTypes.func.isRequired,
+    decreaseCounter: PropTypes.func.isRequired,
+  }
 
   render() {
     return(
@@ -24,8 +29,11 @@ export default class Home extends Component {
           To get started, edit App.js
         </Text>
         <Text style={styles.instructions}>
-          Teste
+          {this.props.counter}
         </Text>
+        <Button title='Increase' onPress={this.props.increaseCounter} />
+        <Text> </Text>
+        <Button title='Decrease' onPress={this.props.decreaseCounter} />
       </View>
     );
   }
