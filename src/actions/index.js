@@ -5,3 +5,7 @@ export const increaseCounter = () => ({
 export const decreaseCounter = () => ({
   type: 'DECREASE_COUNTER',
 })
+
+export const toggleInitializedSpotify = () => ({
+  type: 'TOGGLE_INITIALIZED',
+})

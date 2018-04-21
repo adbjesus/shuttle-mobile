@@ -13,6 +13,22 @@ const counter = (state = 1, action) => {
   }
 }
 
+const default_spotify = {
+  initialized: false,
+}
+
+const spotify = (state = default_spotify, action) => {
+  switch(action.type) {
+    case 'TOGGLE_INITIALIZED':
+      return {
+        ...state,
+        initialized: !state.initialized,
+      }
+    default:
+      return state
+  }
+}
+
 export default combineReducers({
-  counter,
+  counter, spotify,
 })
