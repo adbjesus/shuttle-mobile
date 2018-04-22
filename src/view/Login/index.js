@@ -8,15 +8,15 @@ import styles from '../../styles'
 import LoginContainer from './container'
 
 type Props = {
-  initialized: bool,
-  loggedIn: bool,
+  initialized: boolean,
+  loggedIn: boolean,
   spotifyInitializeRequest: Function,
   spotifyLoginRequest: Function,
   navigation: Object,
 }
 
 class Login extends React.Component<Props> {
-  componentDidMount () {
+  componentDidMount() {
     if (!this.props.initialized) {
       this.props.spotifyInitializeRequest()
     } else if (this.props.initialized && this.props.loggedIn) {
@@ -24,28 +24,27 @@ class Login extends React.Component<Props> {
     }
   }
 
-  componentWillReceiveProps (nextProps) {
+  componentWillReceiveProps(nextProps) {
     if (nextProps.initialized && nextProps.loggedIn) {
       nextProps.navigation.navigate('App')
     }
   }
 
-  render () {
+  render() {
     if (!this.props.initialized) {
       return (
         <View style={styles.container}>
-          <Text style={styles.welcome}>
-            Loading...
-          </Text>
+          <Text style={styles.welcome}>Loading...</Text>
         </View>
       )
     } else {
       return (
         <View style={styles.container}>
-          <Text style={styles.welcome}>
-            Hey! You! Log into your spotify
-          </Text>
-          <Button title='Login with Spotify' onPress={this.props.spotifyLoginRequest} />
+          <Text style={styles.welcome}>Hey! You! Log into your spotify</Text>
+          <Button
+            title="Login with Spotify"
+            onPress={this.props.spotifyLoginRequest}
+          />
         </View>
       )
     }

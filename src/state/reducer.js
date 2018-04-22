@@ -9,5 +9,5 @@ export default createStore(
   combineReducers({
     spotify,
   }),
-  (compose)(install()),
+  compose(install()),
 )

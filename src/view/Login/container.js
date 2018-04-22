@@ -9,7 +9,7 @@ import {
   spotifyLoginRequest,
 } from '../../state/spotify/actions'
 
-export default connect(
-  createStructuredSelector({ initialized, loggedIn }),
-  { spotifyInitializeRequest, spotifyLoginRequest },
-)
+export default connect(createStructuredSelector({ initialized, loggedIn }), {
+  spotifyInitializeRequest,
+  spotifyLoginRequest,
+})
