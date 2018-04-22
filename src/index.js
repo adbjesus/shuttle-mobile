@@ -10,14 +10,16 @@ import store from './state/reducer'
 import Map from './view/Map'
 import Home from './view/Home'
 import Login from './view/Login'
+import Share from './view/Share'
 
 const AppStack = TabNavigator(
   {
     Home: { screen: Home },
+    Share: { screen: Share },
     Map: { screen: Map },
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'Share',
   },
 )
 

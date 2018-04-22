@@ -13,7 +13,7 @@ const spotifyOptions = {
   clientID: '042dbf588d8642928ff88e58fa9c5048',
   sessionUserDefaultsKey: 'SpotifySession',
   redirectURL: 'shuttlemobile://auth',
-  scopes: [],
+  scopes: ['streaming'],
 }
 
 export const spotifyInitializeRequest = Cmd.run(Spotify.initialize, {

@@ -20,9 +20,9 @@ class Home extends React.Component<Props> {
     }
   }
 
-  componentDidUpdate() {
-    if (!this.props.loggedIn) {
-      this.props.navigation.navigate('Auth')
+  componentWillReceiveProps(nextProps) {
+    if (!nextProps.loggedIn) {
+      nextProps.navigation.navigate('Auth')
     }
   }
 
