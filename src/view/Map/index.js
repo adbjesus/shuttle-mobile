@@ -3,12 +3,14 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 
-import styles from '../styles'
+import styles from '../../styles'
 
-export default () => (
+const Map = () => (
   <View style={styles.container}>
     <Text style={styles.welcome}>
       Map Screen
     </Text>
   </View>
 )
+
+export default Map
