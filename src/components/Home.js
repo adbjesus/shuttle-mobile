@@ -10,7 +10,7 @@ import styles from '../styles'
 const Home = ({ counter, increaseCounter, decreaseCounter }) => (
   <View style={styles.container}>
     <Text style={styles.welcome}>
-      Welcome Cona to React Native!
+      Welcome Fanfa to React Native!
     </Text>
     <Text style={styles.instructions}>
       To get started, edit App.js
